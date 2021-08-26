@@ -1,0 +1,1 @@
+# rt-extension-sharesearchlink
