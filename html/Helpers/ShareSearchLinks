@@ -39,7 +39,7 @@ if ( not $id ) {
       <h5 class="modal-title"><&|/l&>Share a link</&></h5>
 \
 % # This just shows up as "x" on RT 4.2.16 and that version shows a close
-% # button already anyway.
+% # button already anyway, so only output this in versions above 4.x.
 % #
 % if ($RT::MAJOR_VERSION > 4) {
       <a href="javascript:void(0)" class="close" data-dismiss="modal" aria-label="Close">
@@ -56,7 +56,7 @@ if ( not $id ) {
 <&|/l&>Sharing this link with other RT users will allow them to load the same search parameters you have used here.</&>
 </p>
 <p style="text-align:center;">
-<a class="button btn" id="NewShareSearchLink" href="<%RT->Config->Get('WebPath')%>/Search/ShareSearchLink.html?id=<%$SharedSearchLink->UUID|u%>" class="btn button"><&|/l&>Shared search link</&></a>
+<a class="button btn" id="NewShareSearchLink" target="_blank" href="<%RT->Config->Get('WebPath')%>/Search/ShareSearchLink.html?id=<%$SharedSearchLink->UUID|u%>" class="btn button"><&|/l&>Shared search link</&></a>
 </p>
 <p style="text-align:center;">
 <button type="button" title="<&|/l&>Copy</&>" onclick="CopyNewSharedSearchLink()">&#x1f4cb;</button>

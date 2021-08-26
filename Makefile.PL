@@ -1,6 +1,8 @@
 use lib '.';
 use inc::Module::Install;
 
+perl_version 5.6;
+
 RTx     'RT-Extension-ShareSearchLink';
 license 'gpl_2';
 repository 'https://github.com/a-j-wood/rt-extension-sharesearchlink';

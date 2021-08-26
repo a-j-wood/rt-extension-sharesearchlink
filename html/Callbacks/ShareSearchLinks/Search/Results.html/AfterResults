@@ -37,11 +37,26 @@ function ShareSearchLink () {
         dataType: 'html',
         data: jQuery('#ShareSearchLinkForm').serialize(),
         success: function (html) {
+\
+%# We remove the loading message and append the new content, rather than
+%# replacing all the HTML, because in RT 4.2.16 if we do that we lose the
+%# modal dialog's close icon.
+%#
             modal.find('.transient-loading-message').remove();
             modal.append(jQuery(html));
+\
+%# The button in the HTML we've just loaded has an href containing a
+%# relative URL.  We create a new "a" tag, set its "href", and clone it,
+%# because reading the cloned tag's "href" attribute gives us the full
+%# canonical URL.
             var a = document.createElement('a');
             a.href = jQuery('#NewShareSearchLink').attr('href');
-            jQuery('#NewShareSearchLinkInput').val(a.cloneNode(false).href);
+            var fullURL = a.cloneNode(false).href;
+\
+%# Now we can put the full URL of the shared search link into the text box
+%# for the user to cut and paste.
+%#
+            jQuery('#NewShareSearchLinkInput').val(fullURL);
         },
     });
     return false;
