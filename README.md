@@ -1,6 +1,6 @@
 # NAME
 
-RT-Extension-ShareSearchLink - Shorter links for ticket searches
+RT::Extension::ShareSearchLink - Shorter links for ticket searches
 
 # DESCRIPTION
 

@@ -3,11 +3,11 @@ use warnings;
 
 package RT::Extension::ShareSearchLink;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
-RT-Extension-ShareSearchLink - Shorter links for ticket searches
+RT::Extension::ShareSearchLink - Shorter links for ticket searches
 
 =head1 DESCRIPTION
 
