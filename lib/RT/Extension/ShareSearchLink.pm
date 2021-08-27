@@ -22,7 +22,7 @@ This is useful when your search URL is very long.
 
 =head1 RT VERSION
 
-Known to work with RT 5.0.1 and 4.2.16.
+Known to work with RT 4.2.16, 4.4.4, and 5.0.1.
 
 =head1 REQUIREMENTS
 
@@ -43,7 +43,8 @@ May need root permissions.
 =item Set up the database
 
 After running C<make install> for the first time, you will need to create
-the database table for this extension, using the file C<etc/dbsetup.sql>.
+the database tables for this extension.  Use C<etc/schema-mysql.sql> for
+MySQL or MariaDB, or C<etc/schema-postgresql.sql> for PostgreSQL.
 
 =item Edit your F</opt/rt4/etc/RT_SiteConfig.pm>
 

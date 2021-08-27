@@ -15,7 +15,7 @@ This is useful when your search URL is very long.
 
 # RT VERSION
 
-Known to work with RT 5.0.1 and 4.2.16.
+Known to work with RT 4.2.16, 4.4.4, and 5.0.1.
 
 # REQUIREMENTS
 
@@ -32,7 +32,8 @@ Requires `Data::GUID`.
 - Set up the database
 
     After running `make install` for the first time, you will need to create
-    the database table for this extension, using the file `etc/dbsetup.sql`.
+    the database tables for this extension.  Use `etc/schema-mysql.sql` for
+    MySQL or MariaDB, or `etc/schema-postgresql.sql` for PostgreSQL.
 
 - Edit your `/opt/rt4/etc/RT_SiteConfig.pm`
 
