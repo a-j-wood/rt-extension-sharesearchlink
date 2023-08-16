@@ -1,3 +1,21 @@
+# Project has left GitHub
+
+It is now here: [https://codeberg.org/a-j-wood/rt-extension-sharesearchlink](https://codeberg.org/a-j-wood/rt-extension-sharesearchlink)
+
+This project was briefly hosted on GitHub.  GitHub is a proprietary,
+trade-secret system that is not Free and Open Source Software (FOSS).
+
+Read about the [Give up GitHub](https://GiveUpGitHub.org) campaign from
+[the Software Freedom Conservancy](https://sfconservancy.org) to understand
+some of the reasons why GitHub is not a good place to host FOSS projects.
+
+Any use of this project's code by GitHub Copilot, past or present, is done
+without permission.  The project owner does not consent to GitHub's use of
+this project's code in Copilot.
+
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
+
+
 # NAME
 
 RT::Extension::ShareSearchLink - Shorter links for ticket searches
